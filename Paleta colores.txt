@@ -1,0 +1,5 @@
+Fondo principal: (#2C3E50) 
+Botones de acción (CTA):  (#F1C40F) y (#db10b9)
+Hover y animaciones CSS: (#E74C3C) .
+Texto principal:  (#ECF0F1) 
+Elementos decorativos:  (#1ABC9C) 

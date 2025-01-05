@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Work</title>
+    <link rel="stylesheet" href="/stylesheet/styles.css">
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Menú principal -->
+    <!-- Contenedor donde se cargará el menú -->
+    <div id="menu-container"></div>
+
+    <!-- Contenido principal -->
+    <main>
+        <h2 class="encabezados-h2">After Work</h2>
+        <div class="product-container">
+            <img src="/img/producto-9.jpg" alt="Imagen del producto" class="product-image">
+            <div class="product-details">
+                <h1>Afert Work Saturday Night</h1>
+                <p>Relájate después de un largo día con las suaves melodías de After Work. Perfecto para acompañarte en esos momentos de desconexión y tranquilidad.</p>
+                <p class="price"><s>160€</s> 80€</p>
+                <button class="boton">AÑADIR AL CARRITO</button>
+                <div class="audio-container">
+                    <p>¡PREVIEW!</p>
+                    <audio controls controlslist="nodownload noplaybackrate nofullscreen">
+                        <source src="/media/audio-9.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-buttons">
+            <a class="prev" href="#">Anterior</a>
+            <a class="all" href="#">Ver Todos</a>
+            <a class="next" href="#">Siguiente</a>
+        </div>
+    </main>
+        <!-- Archivos JavaScript -->
+        <script src="/js/cargarMenu.js"></script>
+        <script src="/js/cargarFooter.js"></script>
+        <script src="/js/menuActivo.js"></script>
+        <script src="/js/navegacionProductos.js"></script>
+    <!-- Footer -->
+    <!-- Contenedor donde se cargará el footer -->
+    <div id="footer-container"></div>
+</body>
