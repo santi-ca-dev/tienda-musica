@@ -7,10 +7,10 @@
 }
 
 html, body {
-    overflow: visible; /* Asegúrate de que no haya overflow que interfiera */
+    overflow: visible; 
     margin: 0;
     padding: 0;
-    background: linear-gradient(/* Efecto gradiente metalizado*/
+    background: linear-gradient(
         90deg,
         #2C3E50, 
         #1C2A35, 
@@ -23,7 +23,7 @@ html, body {
 
 /* -------------- MAIN Y GLOBALES -------------- */
 main {
-    margin: 0; /* Asegura que no haya margen superior */
+    margin: 0; 
     text-align: center;
 }
 
@@ -53,8 +53,8 @@ header {
         320deg,
         #db10b9,
         #34495E,
-        #116447, /* Verde metalizado */
-        #0e5399, /* Azul metalizado */
+        #116447, 
+        #0e5399, 
         rgba(86, 30, 116, 0.932),
         #db10b9
     );
@@ -62,7 +62,7 @@ header {
     padding: 10px 50px;
     margin: 0;
     box-sizing: border-box;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra para el header */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); 
 }
 
 #menu-container{
@@ -104,21 +104,21 @@ header {
     color: #F1C40F;
     text-decoration: underline #F1C40F;
     text-underline-offset: 5px;
-    text-decoration-thickness: 2px; /* Grosor del subrayado */
+    text-decoration-thickness: 2px;
 }
 
 .main-menu .menu-items a.active {
-    color: #F1C40F; /* Color mostaza */
-    text-decoration: underline; /* Subrayado */
+    color: #F1C40F; 
+    text-decoration: underline;
     text-underline-offset: 5px;
-    text-decoration-color: #F1C40F; /* Subrayado del mismo color */
-    text-decoration-thickness: 2px; /* Grosor del subrayado */
+    text-decoration-color: #F1C40F; 
+    text-decoration-thickness: 2px; 
 }
 
 /* Ajuste del header en dispositivos móviles */
 @media (max-width: 768px) {
     header {
-        padding: 5px 20px; /* Reduce el padding del header */
+        padding: 5px 20px; 
     }
     .main-menu .logo img{
         width: 150px; 
@@ -132,17 +132,17 @@ footer {
         320deg,
         #db10b9,
         #34495E,
-        #116447, /* Verde metalizado */
-        #1167bd, /* Azul metalizado */
+        #116447, 
+        #1167bd, 
         rgba(86, 30, 116, 0.6),
         #db10b9
     ); /* Gradiente personalizado */
-    background-size: 200%; /* Escala */
-    padding: 50px 50px; /* Padding estándar */
-    margin: 0; /* Asegura que no haya margen */
+    background-size: 200%; 
+    padding: 50px 50px; 
+    margin: 0;
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5); /* Sombra parael footer */
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5); 
 
 }
 
@@ -192,7 +192,7 @@ footer {
     color: #F1C40F;
 }
 
-/* -------------- PÁGINA DE INICIO -------------- */
+/* -------------- INDEX -------------- */
 
 /* Banner Principal con efecto Parallax */
 .banner-parallax {
@@ -200,47 +200,47 @@ footer {
     width: 100%;
     height: 50vh; /* Altura estándar */
     background-image: url('/img/fondo-parallax.jpg');
-    background-attachment: fixed; /* Efecto parallax */
+    background-attachment: fixed; 
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0; /* Elimina márgenes externos */
-    padding: 0; /* Elimina relleno */
-    position: relative; /* Asegura el posicionamiento correcto */
+    margin: 0; 
+    padding: 0; 
+    position: relative; 
     display: flex;
-    align-items: center; /* Centrado vertical */
-    justify-content: center; /* Centrado horizontal */
+    align-items: center; 
+    justify-content: center; 
 }
 
 /* Contenedor de la silueta */
 .banner-overlay {
-    position: absolute; /* Posicionamiento respecto al banner */
-    bottom: 0; /* Alineado en la parte inferior */
-    left: 50%; /* Centrado horizontalmente */
-    transform: translateX(-50%); /* Centrado exacto */
-    width: 50%; /* Tamaño de la silueta */
-    max-height: 100%; /* Asegura que no sobrepase el contenedor */
-    overflow: hidden; /* Evita que se desborde */
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 50%; 
+    max-height: 100%; 
+    overflow: hidden; 
 }
 
 /* Imagen de la silueta */
 .banner-overlay .silueta {
-    display: block; /* Elimina espacio extra debajo de la imagen */
-    width: 100%; /* Ajusta al tamaño del contenedor */
-    height: auto; /* Mantiene la proporción */
-    max-height: 100%; /* No sobrepasa el contenedor padre */
-    object-fit: contain; /* Asegura que la imagen se ajuste dentro sin deformarse */
+    display: block; 
+    width: 100%; 
+    height: auto;
+    max-height: 100%; 
+    object-fit: contain; 
 }
 
 /* Título del banner */
 .banner-title {
     position: absolute;
-    top: 20%; /* Centrado vertical */
-    left: 50%; /* Centrado horizontal */
+    top: 20%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
     color: #000000;
-    text-shadow: 0 0 0.2em #db10b9; /* Sombra luminosa */
+    text-shadow: 0 0 0.2em #db10b9; 
     text-align: center;
 }
 
@@ -248,87 +248,87 @@ footer {
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(50px); /* Comienza desplazada hacia abajo */
+        transform: translateY(50px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* Aparece en su posición final */
+        transform: translateY(0); 
     }
 }
 /* Animación de Fade-In para el título */
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Invisible al inicio */
-        transform: translate(-50%, -60%); /* Ligeramente desplazado hacia arriba */
+        opacity: 0;
+        transform: translate(-50%, -60%); 
     }
     100% {
-        opacity: 1; /* Totalmente visible */
-        transform: translate(-50%, -50%); /* Posición final centrada */
+        opacity: 1; 
+        transform: translate(-50%, -50%);
     }
 }
 
 /* Pantallas muy grandes */
 @media (min-width: 1600px) {
     .banner-parallax {
-        height: 60vh; /* Aumenta ligeramente la altura para pantallas grandes */
+        height: 60vh; 
     }
 
     .banner-overlay {
-        width: 40%; /* Ajusta el ancho máximo de la silueta */
-        max-height: 100%; /* Asegura que no se desborde */
+        width: 40%; 
+        max-height: 100%; 
     }
 
     .banner-overlay .silueta {
-        max-width: 100%; /* La imagen no puede ser más grande que el contenedor */
-        height: auto; /* Mantiene la proporción */
-        object-fit: contain; /* Asegura que la imagen no se recorte */
+        max-width: 100%; 
+        height: auto; 
+        object-fit: contain; 
     }
 
     .banner-title {
-        font-size: 4em; /* Título más grande en pantallas grandes */
+        font-size: 4em; 
     }
 }
 
 /* Pantallas grandes */
 @media (max-width: 1024px) {
     .banner-parallax {
-        height: 40vh; /* Reduce la altura */
+        height: 40vh; 
     }
 
     .banner-overlay {
-        width: 60%; /* Reduce el tamaño de la silueta */
+        width: 60%; 
     }
 
     .banner-title {
-        font-size: 2.5em; /* Reduce el tamaño del texto */
+        font-size: 2.5em; 
     }
 }
 
 /* Para móviles */
 @media (max-width: 700px) {
     .banner-parallax {
-        height: 35vh; /* Altura más reducida en móviles */
-        background-attachment: scroll; /* Desactiva parallax en móviles */
-        margin: 0; /* Elimina cualquier margen residual */
+        height: 35vh; 
+        background-attachment: scroll; 
+        margin: 0; 
     }
 
     .banner-overlay {
-        width: 70%; /* Reduce la silueta */
+        width: 70%;
     }
 
     .banner-title {
-        font-size: 2.5em; /* Texto más pequeño */
+        font-size: 2.5em; 
     }
 }
 
 /* Contenedor para centrar la galería 3D */
 .galeria-contenedor {
     display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    height: auto; /* Altura del viewport menos header y footer */
-    margin: 200px 0; /* Margen superior e inferior reducido */
-    padding: 0px; /* Espaciado alrededor */
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+    margin: 200px 0; 
+    padding: 0px; 
     box-sizing: border-box;
 }
 
@@ -375,59 +375,61 @@ footer {
 }
 
 .galeria-3d span:hover img {
-    /*transform: translateY(-50px);Descartado*/
+    /*transform: translateY(-50px);Descomentar para añadir efecto*/
     cursor: pointer;
 }
 
 /* Esta clase se añade cuando esta reproduciendose la música de cada imagen */
 .galeria-3d span.playing {
-    border: 2px solid #db10b9; /* Resalta la imagen */
+    border: 2px solid #db10b9; 
     border-radius: 16px;
-    /*transform: scale(1.5); Descartado*/
-    box-shadow: 0 0 15px rgba(241, 196, 15, 0.7); /* Sombra luminosa */
+    /*transform: scale(1.5); Descomentar para aumentar escala*/
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.7); 
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
+
 
 /* Pantallas pequeñas */
 @media (max-width: 768px) {
     .galeria-3d {
-        width: 150px; /* Reduce el tamaño en pantallas medianas */
+        width: 150px; 
         height: 150px;
     }
 
     .galeria-3d span {
-        transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px); /* Ajusta la distancia */
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px); 
     }
 }
 
 /* Pantallas muy pequeñas */
 @media (max-width: 480px) {
     .galeria-3d {
-        width: 120px; /* Más pequeño para pantallas pequeñas */
+        width: 120px; 
         height: 120px;
     }
 
     .galeria-3d span {
-        transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px); /* Ajusta la distancia */
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px); 
     }
 }
 
 /* Contenedor del texto */
 .galeria-3d span .texto-hover {
     position: absolute;
-    top: 0; /* Cubre toda la imagen desde la parte superior */
-    left: 0; /* Cubre toda la imagen desde la parte izquierda */
-    width: 100%; /* Ocupa el ancho completo de la imagen */
-    height: 100%; /* Ocupa la altura completa de la imagen */
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%; 
     background: linear-gradient(0deg, rgba(21,30,39,0.6) 0%, rgba(86,30,116,0.6) 100%);
-    color: #fff; /* Texto blanco */
-    display: flex; /* Flexbox para centrar el texto */
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    font-size: 1.2em; /* Tamaño del texto */
-    opacity: 0; /* Oculto inicialmente */
-    transition: opacity 0.5s ease, transform 1.5s ease; /* Efecto de transición suave */
-    border-radius: 16px; /* Bordes redondeados para coincidir con la imagen */
+    color: #fff; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.2em; 
+    opacity: 0; 
+    transition: opacity 0.5s ease, transform 1.5s ease; 
+    border-radius: 16px; 
 }
 
 /* Aparece el fade y el texto al hacer hover */
@@ -455,7 +457,7 @@ footer {
 
 .contenedor-oferta {
     display: flex;
-    gap: 100px; /* Espacio entre imágenes */
+    gap: 100px;
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -466,17 +468,17 @@ footer {
     position: relative;
     width: 50%;
     max-width: 400px;
-    overflow: hidden; /* Asegura que los elementos no se desborden */
+    overflow: hidden; 
     border-radius: 16px; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;/* Efecto de escala */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .container img {
     width: 100%;
     height: auto;
     object-fit: cover; 
-    transition: transform 0.3s ease-in-out; /* Efecto de escala */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .container .overlay {
@@ -493,22 +495,22 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
-    opacity: 0; /* Inicialmente oculto */
+    opacity: 0; 
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .container:hover {
-    transform: scale(1.05); /* Escala sincronizada */
-    box-shadow: 0 0 15px rgba(241, 196, 15, 0.7); /* Sombra luminosa */
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.7);
 
 }
 
 .contenedor-imagen-oferta:hover img {
-    transform: scale(1.05); /* Escala sincronizada */
+    transform: scale(1.05); 
 }
 
 .container:hover .overlay {
-    opacity: 1; /* Hace visible el overlay */
+    opacity: 1; 
     cursor: pointer;
 }
 
@@ -548,7 +550,7 @@ footer {
 /* Pantallas pequeñas */
 @media (max-width: 768px) {
     .contenedor-oferta {
-        flex-direction: column; /* Apila las imágenes verticalmente */
+        flex-direction: column; 
         gap: 10px; 
     }
 
@@ -561,12 +563,12 @@ footer {
 /* Pantallas muy pequeñas */
 @media (max-width: 480px) {
     .contenedor-oferta {
-        padding: 10px; /* Reduce el padding */
+        padding: 10px; 
     }
 
     .container {
-        max-width: 95%; /* Usa casi todo el ancho */
-        margin: 5px auto; /* Centrado con menor margen */
+        max-width: 95%;
+        margin: 5px auto; 
     }
 }
 
@@ -584,7 +586,7 @@ footer {
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(20% - 20px); /* 20% width for 5 columns, considering the gap */
+    width: calc(20% - 20px); 
     min-width: 150px;
     transition: transform 0.3s;
     cursor: pointer;
@@ -622,41 +624,41 @@ footer {
 }
 
 .boton{
-    all: unset; /* Elimina todos los estilos predeterminados */
+    all: unset; 
     display: inline-block;
     background-color: #151e27; 
     color: white; 
-    padding: 10px 20px; /* Espaciado interno */
+    padding: 10px 20px; 
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1em; /* Tamaño de fuente */
-    text-align: center; /* Centrar texto */
-    border-radius: 16px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de mano */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+    font-size: 1em; 
+    text-align: center; 
+    border-radius: 16px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 .boton:hover {
-    background-color: #db10b9; /* Cambia color al pasar el mouse */
-    transform: translateY(-2px); /* Efecto de elevación */
+    background-color: #db10b9; 
+    transform: translateY(-2px);
 }
 
 .boton:active {
-    transform: translateY(0); /* Restablece la posición */
+    transform: translateY(0); 
 }
 
 /* Pantallas medianas */
 @media (max-width: 1024px) {
     .gallery-item {
-        width: calc(33.33% - 20px); /* 3 columns */
+        width: calc(33.33% - 20px); 
     }
 }
 
 /* Pantallas pequeñas */
 @media (max-width: 768px) {
     .gallery-item {
-        width: calc(50% - 20px); /* 2 columns */
+        width: calc(50% - 20px); 
     }
 }
 
@@ -819,9 +821,9 @@ form .campo, form textarea, form select {
     border-radius: 16px;
     transition: border-color 0.3s;
     box-sizing: border-box;   
-    appearance: none;         /* Elimina estilos predeterminados */
-    -webkit-appearance: none; /* Compatibilidad con WebKit */
-    -moz-appearance: none;    /* Compatibilidad con Firefox */
+    appearance: none;        
+    -webkit-appearance: none; 
+    -moz-appearance: none;   
 }
 
 form select {
@@ -835,9 +837,9 @@ form textarea {
 }
 
 form input[type="checkbox"] {
-    margin-right: 10px; /* Espaciado entre el checkbox y el texto */
-    vertical-align: middle; /* Centra el checkbox con el texto */
-    display: inline-block; /* Alienar checkbox horizontalmente */
+    margin-right: 10px; 
+    vertical-align: middle; 
+    display: inline-block; 
 }
 
 #enlace-politica {
@@ -912,4 +914,45 @@ form input[type="checkbox"] {
     }
 }
 
+.galeria-3d.pausada {
+  animation-play-state: paused;
+}
 
+.galeria-3d.invertida {
+  animation-direction: reverse;
+}
+
+.galeria-controles {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.boton-galeria {
+  all: unset;
+  background-color: #151e27;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 9999px; /* Estilo píldora */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1em;
+}
+
+.boton-galeria svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+}
+
+.boton-galeria:hover {
+  background-color: #db10b9;
+  transform: translateY(-2px);
+}
+
+.boton-galeria:active {
+  transform: translateY(0);
+}
