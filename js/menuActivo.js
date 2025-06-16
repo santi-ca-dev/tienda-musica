@@ -1,13 +1,13 @@
 function activateMenuItem() {
-    const currentPath = window.location.pathname; // Obtiene la ruta actual
+    const currentPath = window.location.pathname.split('/').pop(); 
     const menuLinks = document.querySelectorAll(".main-menu .menu-items a");
 
     menuLinks.forEach(link => {
-        // Compara la ruta actual con el atributo href
-        if (link.getAttribute("href") === currentPath) {
-            link.classList.add("active"); // Agrega la clase active al enlace actual
+        const linkHref = link.getAttribute("href").split('/').pop(); 
+        if (linkHref === currentPath) {
+            link.classList.add("active");
         } else {
-            link.classList.remove("active"); // Asegura que otros enlaces no tengan la clase
+            link.classList.remove("active");
         }
     });
 }

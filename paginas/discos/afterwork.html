@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>After Work</title>
-    <link rel="stylesheet" href="/stylesheet/styles.css">
-    <link rel="icon" href="/img/favicon.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/tienda-musica/stylesheet/styles.css" />
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+        crossorigin="anonymous"
+    />
+    <link rel="icon" href="/tienda-musica/img/favicon.png" type="image/png" />
 </head>
 <body>
     <!-- Menú principal -->
-    <!-- Contenedor donde se cargará el menú -->
     <div id="menu-container"></div>
 
     <!-- Contenido principal -->
     <main>
-        <h2 class="encabezados-h2">After Work</h2>
-        <div class="product-container">
-            <img src="/img/producto-9.jpg" alt="Imagen del producto" class="product-image">
-            <div class="product-details">
-                <h1>Afert Work Saturday Night</h1>
-                <p>Relájate después de un largo día con las suaves melodías de After Work. Perfecto para acompañarte en esos momentos de desconexión y tranquilidad.</p>
-                <p class="price"><s>160€</s> 80€</p>
-                <button class="boton">AÑADIR AL CARRITO</button>
-                <div class="audio-container">
-                    <p>¡PREVIEW!</p>
-                    <audio controls controlslist="nodownload noplaybackrate nofullscreen">
-                        <source src="/media/audio-9.mp3" type="audio/mpeg">
-                        Tu navegador no soporta el elemento de audio.
-                    </audio>
-                </div>
+        <h2 class="encabezados-h2">CONTACTO</h2>
+        <div class="container-form">
+            <div class="info-form">
+                <p>Escríbenos y uno de nuestros especialistas te atenderá</p>
+                <a href="#"><i class="fa fa-phone"></i>600-000-000</a>
+                <a href="#"><i class="fa fa-envelope"></i>info@tumusicon.com</a>
+                <a href="#"><i class="fa fa-map-marked"></i>Calle random 123</a>
             </div>
+            <form action="#" autocomplete="off">
+                <input type="text" name="nombre" placeholder="Nombre" required class="campo" />
+                <select name="discos" id="discos" required class="campo">
+                    <option value="" disabled selected>Selecciona un género musical</option>
+                    <option value="rock">Techno</option>
+                    <option value="rock">House</option>
+                    <option value="rock">Techno</option>
+                    <option value="rock">Classic</option>
+                    <option value="rock">Pop</option>
+                </select>
+                <input type="email" name="email" placeholder="Email" required class="campo" />
+                <textarea placeholder="Escribe tu mensaje..."></textarea>
+                <div>
+                    <input
+                        type="checkbox"
+                        name="politica"
+                        value="acepto"
+                        required
+                    />Acepto la política de privacidad de
+                    <a href="#" id="enlace-politica">Web Solutions</a>
+                </div>
+                <br /><br />
+                <input type="submit" value="ENVIAR MENSAJE" class="btn-form" />
+            </form>
         </div>
-        <div class="navigation-buttons">
-            <a class="prev" href="#">Anterior</a>
-            <a class="all" href="#">Ver Todos</a>
-            <a class="next" href="#">Siguiente</a>
+        <hr class="separador" />
+        <h2>DONDE ESTAMOS</h2>
+        <div class="contenedor">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396.163865973522!2d-4.424681849979896!3d36.72059343890849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7956a7290d5%3A0x800886fd0bfea7ba!2sCentro%20Hist%C3%B3rico%2C%20Distrito%20Centro%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1707237190817!5m2!1ses!2ses"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
         </div>
     </main>
-        <!-- Archivos JavaScript -->
-        <script src="/js/cargarMenu.js"></script>
-        <script src="/js/cargarFooter.js"></script>
-        <script src="/js/menuActivo.js"></script>
-        <script src="/js/navegacionProductos.js"></script>
+
+    <!-- Archivos JavaScript -->
+    <script src="/tienda-musica/js/cargarMenu.js"></script>
+    <script src="/tienda-musica/js/cargarFooter.js"></script>
+    <script src="/tienda-musica/js/menuActivo.js"></script>
+
     <!-- Footer -->
-    <!-- Contenedor donde se cargará el footer -->
     <div id="footer-container"></div>
 </body>
+</html>

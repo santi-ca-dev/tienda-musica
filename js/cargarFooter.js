@@ -1,20 +1,20 @@
 function loadFooter() {
-    const menuContainer = document.querySelector("#footer-container");
-    fetch("/plantillas/footer.html")
+    const footerContainer = document.querySelector("#footer-container");
+
+    fetch("/tienda-musica/plantillas/footer.html")
         .then(response => {
             if (!response.ok) {
-                throw new Error("Error al cargar el menú");
+                throw new Error("Error al cargar el footer");
             }
             return response.text();
         })
         .then(data => {
-            menuContainer.innerHTML = data;
+            footerContainer.innerHTML = data;
         })
         .catch(error => {
             console.error("Error:", error);
-            menuContainer.innerHTML = "<p>Error al cargar el menú.</p>";
+            footerContainer.innerHTML = "<p>Error al cargar el footer.</p>";
         });
 }
 
-// Ejecutar la función cuando la página cargue
 document.addEventListener("DOMContentLoaded", loadFooter);

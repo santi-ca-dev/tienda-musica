@@ -1,8 +1,8 @@
 function loadMenu(callback) {
     const menuContainer = document.querySelector("#menu-container");
 
-    // Cargar el menú desde plantillas/menu.html
-    fetch("/plantillas/menu.html")
+    // Cambiar la ruta para que incluya el prefijo del repositorio
+    fetch("/tienda-musica/plantillas/menu.html")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Error al cargar el menú");
